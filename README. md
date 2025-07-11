@@ -1,0 +1,47 @@
+UNIVERSIDAD ESTATAL AMAZONICA
+
+GRICELDA YOSHIRA NOA ILLANES
+
+PROGRAMACIÓN ORIENTADA A OBJETOS 
+
+PARALELO "E"
+
+DESCRIPCIÓN DEL PROGRAMA DESARROLLADO:
+
+Este programa desarrollado en Java simula un sistema de registro de animales domésticos. Demuestra el uso de constructores por defecto, constructores parametrizados y sobrecarga de constructores a través de dos clases principales:
+GATO Y PERRO
+
+ESTRUCTURA DEL PROGRAMA:
+
+Estructura del Programa
+1. Clase Principal: SistemaAnimalesDomesticos
+
+Contiene el método main que ejecuta el programa
+Crea instancias de perros y gatos usando diferentes constructores
+Demuestra la funcionalidad completa del sistema
+
+2. Primera Clase: Perro
+
+Atributos: nombre, raza, edad, peso, color
+Constructores implementados:
+
+Constructor por defecto (sin parámetros)
+Constructor parametrizado completo (5 parámetros)
+Constructor sobrecargado (nombre y raza)
+Constructor sobrecargado (nombre, raza y edad)
+
+
+Métodos especiales: ladrar() y mostrarInfo()
+
+3. Segunda Clase: Gato
+
+Atributos: nombre, raza, edad, color, esInterior
+Constructores implementados:
+
+Constructor por defecto (sin parámetros)
+Constructor parametrizado completo (5 parámetros)
+Constructor sobrecargado (nombre y raza)
+Constructor sobrecargado (nombre, raza y edad)
+
+
+Métodos especiales: maullar() y mostrarInfo(
