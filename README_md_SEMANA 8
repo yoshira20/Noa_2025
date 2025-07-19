@@ -1,0 +1,105 @@
+"Sistema de Gestión de Tareas - POO Java"
+
+Descripción del Proyecto:
+
+Este proyecto implementa un sistema de gestión de tareas desarrollado en Java, aplicando principios de Programación Orientada a Objetos (POO) y los principios SOLID. El sistema permite crear, listar, actualizar y eliminar tareas a través de una interfaz de consola intuitiva.
+
+Características Principales:
+
+1.-Gestión completa de tareas: Crear, leer, actualizar y eliminar tareas
+2.-Estados de tareas: Pendiente, En Progreso, Completada, Cancelada
+3.-Interfaz de consola: Menú interactivo y fácil de usar
+4.-Arquitectura por capas: Separación clara de responsabilidades
+5.-Principios SOLID: Aplicación de buenas prácticas de desarrollo
+6.-Documentación completa: Javadoc en clases y métodos principales
+
+"ESTRUCTURA DEL PROYECTO"
+
+com.yoshira.proyecto/
+├── modelo/
+│   ├── Tarea.java          # Clase modelo para representar tareas
+│   └── EstadoTarea.java    # Enumeración de estados de tareas
+├── servicio/
+│   ├── ITareaServicio.java # Interfaz del servicio de tareas
+│   └── TareaServicio.java  # Implementación del servicio
+├── vista/
+│   ├── IVistaConsola.java  # Interfaz de la vista
+│   └── VistaConsola.java   # Implementación de la vista de consola
+└── dashboard/
+    └── Dashboard.java      # Clase principal y controlador
+
+
+Principios SOLID Aplicados
+
+ 1. Single Responsibility Principle (SRP)**
+Cada clase tiene una única responsabilidad:
+  1.1. `Tarea`: Representar una tarea
+  1.2.`TareaServicio`: Lógica de negocio
+  1.3.`VistaConsola`: Interfaz de usuario
+  1.4`Dashboard`: Coordinación del sistema
+
+2. Open/Closed Principle (OCP)
+2.1. Las clases están abiertas para extensión pero cerradas para modificación
+2.2 Se pueden agregar nuevos tipos de servicios sin modificar código existente
+
+3. Liskov Substitution Principle (LSP)
+3.1. Las implementaciones pueden ser sustituidas por sus interfaces sin afectar el funcionamiento
+
+4. Interface Segregation Principle (ISP)
+4.1 Interfaces específicas y cohesivas (`ITareaServicio`, `IVistaConsola`)
+
+5. Dependency Inversion Principle (DIP)
+5.1. Las clases de alto nivel no dependen de clases de bajo nivel
+5.2 Se depende de abstracciones (interfaces) en lugar de implementaciones concretas
+
+FUNCIONALIDADES
+
+"Gestión de Tareas"
+Crear tareas: Agregar nuevas tareas con título, descripción y fecha de vencimiento
+Listar tareas: Mostrar todas las tareas registradas
+Buscar por ID: Encontrar tareas específicas por su identificador
+Actualizar estado: Cambiar el estado de las tareas
+Eliminar tareas: Remover tareas del sistema
+Filtrar por estado: Mostrar tareas según su estado actual
+
+"Estados de Tareas"
+Pendiente: Tarea recién creada
+En Progreso: Tarea en desarrollo
+Completada: Tarea finalizada exitosamente
+Cancelada: Tarea cancelada o descartada
+
+
+"USO DEL SISTEMA"
+
+Al ejecutar la aplicación, se mostrará un menú interactivo con las siguientes opciones:
+
+=== SISTEMA DE GESTIÓN DE TAREAS ===
+1. Crear nueva tarea
+2. Listar todas las tareas
+3. Buscar tarea por ID
+4. Actualizar estado de tarea
+5. Eliminar tarea
+6. Mostrar tareas por estado
+7. Mostrar estado del proyecto
+0. Salir
+
+
+"Ejemplos de Uso"
+
+Crear una nueva tarea
+1. Seleccionar opción 
+2. Ingresar título: "Estudiar para examen"
+3. Ingresar descripción: "Revisar capítulos 1-5 del libro"
+4. Ingresar fecha de vencimiento: "2024-01-15"
+
+"Actualizar estado de tarea"
+1. Seleccionar opción 4
+2. Ingresar ID de la tarea
+3. Seleccionar nuevo estado (1-4)
+
+"Tareas Ficticias Incluidas"
+
+El sistema incluye tareas de ejemplo para demostración:
+- Estudiar POO (Pendiente)
+- Implementar Dashboard (En Progreso)
+- Documentar código (Pendiente)
