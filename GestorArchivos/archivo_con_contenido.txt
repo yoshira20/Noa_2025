@@ -1,0 +1,4 @@
+Línea 1: Bienvenidos, soy NOA
+Línea 2: Este es un archivo de prueba
+Línea 3: Desarrollado en el lenguaje Java
+Línea 4: Con manejo de excepciones
