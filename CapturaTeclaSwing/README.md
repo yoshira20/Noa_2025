@@ -49,3 +49,6 @@ src/
 Todo el código está en un solo archivo para que sea fácil de entender. Tiene comentarios explicando las partes importantes.
 
 Hecho como proyecto de práctica para la clase de programación orientada a objetos.
+
+<img width="845" height="404" alt="Captura de pantalla 2025-10-02 135535" src="https://github.com/user-attachments/assets/60b3abf2-bf63-4f8f-9442-b95a5941050d" />
+
