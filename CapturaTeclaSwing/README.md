@@ -2,13 +2,13 @@ Ejercicio: Captura de tecla "C" en Java Swing
 
 Proyecto para aprender a capturar eventos de teclado en Java Swing. Básicamente es una lista de tareas donde puedes marcar/desmarcar items presionando la tecla C.
 
-## ¿Qué hace?
+A) ¿Qué hace?
 
 Es una app con una lista de tareas. Seleccionas una tarea y presionas la tecla **C** para marcarla como completada (aparece un ✓). Si vuelves a presionar C, se desmarca. También tiene un botón para agregar nuevas tareas.
 
 Lo hice porque estaba aprendiendo sobre KeyListeners y Key Bindings en Swing, y quería ver la diferencia entre ambos métodos
 
-## Cómo usarlo
+B) ¿Cómo usarlo?
 
 1. Clona el repo o descarga el archivo `CapturaTeclaApp.java`
 2. Ábrelo en tu IDE
@@ -18,7 +18,7 @@ Lo hice porque estaba aprendiendo sobre KeyListeners y Key Bindings en Swing, y 
 
 También puedes agregar tareas nuevas con el botón de abajo.
 
-## Lo que aprendí
+C)Lo que aprendí
 
 Este proyecto me sirvió para entender:
 
@@ -27,7 +27,7 @@ Este proyecto me sirvió para entender:
 - Cómo funciona JList con DefaultListModel
 - Por qué hay que usar SwingUtilities.invokeLater() para crear interfaces
 
-### Key Bindings vs KeyListener
+-Key Bindings vs KeyListener
 
 Al principio usé KeyListener pero me di cuenta que Key Bindings es mejor porque:
 - No necesitas que el componente tenga focus
@@ -39,7 +39,7 @@ Key Bindings usa tres cosas:
 2. **ActionMap** - define qué hacer cuando se presiona
 3. **Scope** - define cuándo debe funcionar (usé WHEN_IN_FOCUSED_WINDOW)
 
-## Estructura
+D) Estructura
 
 ```
 src/
